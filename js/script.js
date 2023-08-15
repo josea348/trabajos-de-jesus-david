@@ -46,6 +46,12 @@ if (d.getElementById("post-blog")) {
     "<p>"+('  <head>')+"</p>"
 `; */
 
+date = new Date;
+year = date.getFullYear();
+month = date.getMonth()+1;
+day = date.getDate();
+document.getElementById("datos").innerHTML = day+" / "+month+" / "+year;
+
 let enviar = document.getElementById("enviar");
 let texto = document.getElementById("texto");
 let text = document.getElementById("text");
